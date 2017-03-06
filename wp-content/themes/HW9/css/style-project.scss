@@ -1,0 +1,434 @@
+@import "../lib/fancybox/jquery.fancybox.css";
+@import "modules/header";
+@import "modules/footer";
+
+html {
+    font-size: 13px;
+}
+body {
+    background: #f6f6f6;
+    ul, li {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.section-project-skokov{
+    background: url("../images/slider-bg-2.png") no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+    .title-project{
+        display: inline-block;
+        background-color: #424146;
+        color: #ffea00;
+        font-size: 2.188rem;
+        text-transform: uppercase;
+    }
+}
+.aside-project {
+    padding-left: 5px;
+    .title-aside {
+        color: #ffea00;
+        font: 400 1.25rem/1.312rem "Century Gothic";
+        text-transform: uppercase;
+        padding: 15px 25px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+.aside-details{
+    background-color: #424147;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #ffffff;
+    .ul-aside-project{
+        .li-aside-project{
+            font: 400 1rem/1.312rem"Century Gothic";
+            margin-bottom: 15px;
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+            .icon-project{
+                background: #ffeb00;
+                width: 31px;
+                text-align: center;
+            }
+            &:before{
+                content: "\203a" ;
+                background: #ffeb00;
+                padding-left: 6px;
+                padding-right: 6px;
+                color: #000000;
+                font-size: 15px;
+            }
+        }
+    }
+}
+.aside-post{
+    background-color: #424147;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    .ul-aside-post {
+        padding-left: 15px;
+        .li-aside-post {
+            font: 400 1rem/1.25rem "Century Gothic";
+            text-transform: uppercase;
+            padding-bottom: 34px;
+            padding-right: 10px;
+            .link-post {
+                color: #ffffff;
+            }
+            .img-aside-post{
+                float: left;
+                padding-right: 10px;
+
+            }
+            .yellow{
+                color: #ffea00;
+                font: 400 .75rem/1.25rem "Century Gothic";
+                display: block;
+                text-align: right;
+                padding-right: 15px;
+                a{
+                    color: #ffea00;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+.aside-tags{
+    background-color: #424147;
+    padding-bottom: 10px;
+    .ul-aside-tags{
+        padding-left: 0;
+        text-align: center;
+        .li-aside-tags{
+            display: inline-block;
+            background-color: #ffea00;
+            width: 99px;
+            margin: 2px;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: #424147;
+                font:400 1rem/1.25rem "Century Gothic";
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
+.section-project-content {
+    margin-top: 20px;
+    text-align: center;
+
+    .title-content {
+        display: inline-block;
+        color: #ffea00;
+        font: 400 1.125rem/1.312rem "Century Gothic";
+        text-transform: uppercase;
+        background-color: #424147;
+        padding: 8px 18px;
+    }
+    .text-content {
+        color: #424147;
+        font: 400 0.938rem/1.875rem "Century Gothic";
+    }
+    .section-recent-projects {
+        border-top: 1px solid #cecece;
+        .list-recent-projects {
+            padding-left: 0;
+            li {
+                display: inline-block;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+// carousel thumbnails
+#carousel-example-generic {
+    background: #424147;
+    padding-top: 5px;
+    .carousel-control{
+        width: auto;
+        margin-left: 10px;
+        opacity: 1;
+        span{
+            &:before {
+                background: #000000;
+                padding: 35px 10px;
+            }
+        }
+    }
+    .right {
+        right: 30px;
+    }
+    .item {
+        img {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+    .thumbnails-carousel {
+        padding: 5px 0 0 0;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+        background-color: black;
+        .center {
+            display: inline-block;
+        }
+
+        li {
+            margin-right: 5px;
+            float: left;
+            cursor: pointer;
+        }
+        img {
+            padding: 10px 0;
+            height: 100px;
+        }
+    }
+    .controls-background-reset {
+        background: none !important;
+    }
+    .active-thumbnail {
+        opacity: 0.4;
+    }
+    .indicators-fix {
+        bottom: 70px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    html{
+        font-size: 13px;
+    }
+    .aside-post{
+        padding-left: 5px;
+        .ul-aside-post{
+            padding-left: 5px;
+        }
+    }
+    .aside-details {
+        margin-top: 20px;
+        .ul-aside-project {
+            .li-aside-project {
+                a {
+                    padding-left: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 992px) and (max-width: 1199px)  {
+    html{
+        font-size: 16px;
+    }
+    .aside-details {
+        margin-top: 20px;
+        .ul-aside-project {
+            .li-aside-project {
+                a {
+                    padding-left: 8px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1633px) {
+    html{
+        font-size: 16px;
+    }
+    .section-project-skokov{
+        width: 100%;
+        .title-project{
+            text-transform: uppercase;
+        }
+    }
+    .section-project-content{
+        text-align: left;
+    }
+    .aside-project{
+        padding-left: 5px;
+        .title-aside{
+            padding: 35px ;
+        }
+        .aside-details{
+            margin-top: 20px;
+            padding-bottom: 35px;
+            margin-bottom: 30px;
+            .ul-aside-project{
+                .li-aside-project{
+                    margin-bottom: 20px;
+                    &:before{
+                        font-size: 20px;
+                        padding-left: 7px;
+                        padding-right: 7px;
+                    }
+                    a{
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+        .aside-post{
+            padding-bottom: 35px;
+            margin-bottom: 30px;
+            .ul-aside-post {
+                .li-aside-post {
+                    margin-bottom: 5px;
+                    .img-aside-post{
+                        padding-right: 10px;
+                    }
+                    .yellow{
+                        padding-right: 41px;
+                    }
+                }
+            }
+        }
+        .aside-tags{
+            padding-bottom: 31px;
+            .ul-aside-tags{
+                .li-aside-tags{
+                    width: 30%;
+                    margin: 3px;
+                    a{
+                        padding: 6px 5px;
+                    }
+                }
+            }
+        }
+    }
+    .section-project-content {
+        margin-top: 20px;
+        .title-content {
+            padding: 8px 18px;
+        }
+        .section-recent-projects {
+            margin-top: 30px;
+
+            .list-recent-projects {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1633px)  {
+    html{
+        font-size: 16px;
+    }
+    .section-project-skokov{
+        width: 100%;
+        .title-project{
+            padding: 22px 143px 22px 22px;
+            text-transform: uppercase;
+            margin: 40px 119px;
+        }
+    }
+    .section-project-content{
+        text-align: left;
+    }
+    .aside-project{
+        padding-left: 15px;
+        .title-aside{
+            padding: 34px ;
+        }
+        .aside-details{
+            margin-top: 78px;
+            padding-bottom: 35px;
+            margin-bottom: 30px;
+            .ul-aside-project{
+                .li-aside-project{
+                    margin-bottom: 20px;
+                    &:before{
+                        font-size: 20px;
+                        padding-left: 7px;
+                        padding-right: 7px;
+                    }
+                    a{
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+        .aside-post{
+            padding-bottom: 35px;
+            margin-bottom: 30px;
+            .ul-aside-post {
+                .li-aside-post {
+                    margin-bottom: 5px;
+                    .img-aside-post{
+                        padding-right: 10px;
+                    }
+                    .yellow{
+                        padding-right: 41px;
+                    }
+                }
+            }
+        }
+        .aside-tags{
+            padding-bottom: 30px;
+            .ul-aside-tags{
+                text-align: left;
+                padding-left: 35px;
+                padding-right: 35px;
+                .li-aside-tags{
+                    width: 30%;
+                    margin: 1.5px;
+                    a{
+                        padding: 6px 9px;
+                    }
+                }
+            }
+        }
+    }
+    .section-recent-projects {
+        border-top: 1px solid #cecece;
+    }
+    .section-project-content {
+        margin-top: 78px;
+        .title-content {
+            padding: 30px 55px;
+            margin: 35px 0;
+        }
+
+        .section-recent-projects {
+            margin-top: 30px;
+            .list-recent-projects {
+                margin-bottom: 100px;
+                li {
+                    display: inline-block;
+                    padding: 10px;
+                    &:first-child {
+                        padding-left: 15px;
+                    }
+                    &:last-child {
+                        padding-right: 15px;
+                    }
+                }
+            }
+        }
+        .section-project-description, .section-recent-projects {
+            padding-left: 40px;
+        }
+    }
+}
+
+

@@ -1,0 +1,317 @@
+@import url(../lib/fancybox/jquery.fancybox.css);
+html {
+  font-size: 12px; }
+
+#header {
+  background: #f6f6f6; }
+
+.navbar-skokov {
+  margin-bottom: 0; }
+  .navbar-skokov .btn-collapsed-skokov {
+    margin: 27px; }
+    .navbar-skokov .btn-collapsed-skokov span {
+      border: 1px solid #28a4c9; }
+  .navbar-skokov .brand-skokov {
+    padding: 5px; }
+    .navbar-skokov .brand-skokov .img-logo {
+      width: 80px; }
+  .navbar-skokov .nav-skokov {
+    margin-bottom: 0; }
+    .navbar-skokov .nav-skokov .active a {
+      background-color: #ffea00; }
+    .navbar-skokov .nav-skokov .li-nav-skokov {
+      color: black;
+      font: 300 1rem/2rem Code, serif;
+      text-transform: uppercase;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .navbar-skokov .nav-skokov .li-nav-skokov a {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        .navbar-skokov .nav-skokov .li-nav-skokov a:hover {
+          background-color: #ffea00; }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 15px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 14px; }
+
+  .navbar-skokov .nav-skokov .li-nav-skokov {
+    margin-top: 40px; }
+  .navbar-skokov .brand-skokov {
+    padding: 22px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 16px; }
+
+  .navbar-skokov .brand-skokov {
+    padding: 22px; }
+    .navbar-skokov .brand-skokov .img-logo {
+      width: 116px; }
+  .navbar-skokov .nav-skokov {
+    padding: 35px 25px; }
+    .navbar-skokov .nav-skokov .li-nav-skokov a {
+      padding: 24px 10px;
+      margin-right: 40px; } }
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px; }
+
+  .navbar-skokov .brand-skokov {
+    padding: 22px; }
+    .navbar-skokov .brand-skokov .img-logo {
+      width: 116px; }
+  .navbar-skokov .nav-skokov {
+    padding: 35px 25px; }
+    .navbar-skokov .nav-skokov .li-nav-skokov a {
+      padding: 24px 10px;
+      margin-left: 40px; } }
+html {
+  font-size: 12px; }
+
+#footer {
+  padding: 0;
+  font: 400 0.813rem/1.313rem "Century Gothic";
+  text-align: center;
+  background: #3f3f44;
+  color: #ffffff; }
+  #footer .container .row-footer-skokov {
+    margin: 0; }
+  #footer ul {
+    padding-left: 0; }
+    #footer ul li {
+      list-style-type: none; }
+  #footer .title-footer {
+    font: 400 1.125rem/2rem "Century Gothic";
+    padding: 10px; }
+  #footer .con-footer-skokov {
+    background: #000000; }
+  #footer .icon-footer-skokov {
+    width: 30px;
+    font-size: 14px;
+    padding: 8px 0;
+    background: #000000; }
+  #footer .yellow {
+    color: #ffeb00; }
+  #footer .navbar-skokov-bottom {
+    padding-top: 10px;
+    margin: 0;
+    background: #000000; }
+    #footer .navbar-skokov-bottom .navbar-right-fotter {
+      font: 300 1rem/2rem Code; }
+      #footer .navbar-skokov-bottom .navbar-right-fotter li {
+        display: inline-block; }
+
+.col-skokov-about {
+  padding: 0; }
+  .col-skokov-about .btn-learn-more {
+    color: #ffffff;
+    font-size: 0.938rem;
+    padding: 0.13rem 1.125rem;
+    background-color: black;
+    border-bottom: 1px solid #ffeb00; }
+  .col-skokov-about .row-footer-img-container {
+    list-style-type: none; }
+    .col-skokov-about .row-footer-img-container li {
+      padding: 5px 1px; }
+      .col-skokov-about .row-footer-img-container li .img-skokov-about {
+        display: inline-block; }
+
+.col-skokov-tweets {
+  padding: 0; }
+  .col-skokov-tweets a {
+    color: #FFFFFF; }
+  .col-skokov-tweets .list-tweets {
+    text-align: left; }
+    .col-skokov-tweets .list-tweets .row .col-text-tweets {
+      margin-left: 10px; }
+      .col-skokov-tweets .list-tweets .row .col-text-tweets .days {
+        font-size: 0.7rem;
+        display: block; }
+  .col-skokov-tweets .footer-social-connecting {
+    display: inline-block;
+    list-style-type: none;
+    width: 100%; }
+    .col-skokov-tweets .footer-social-connecting ul {
+      padding-left: 0; }
+      .col-skokov-tweets .footer-social-connecting ul li {
+        display: inline-block; }
+        .col-skokov-tweets .footer-social-connecting ul li a {
+          color: #ffffff; }
+
+.col-skokov-contact {
+  padding: 0; }
+  .col-skokov-contact .address-skokov {
+    text-align: left; }
+    .col-skokov-contact .address-skokov .dd-email {
+      color: #ffea00; }
+    .col-skokov-contact .address-skokov .dd-tel {
+      color: #FFFFFF; }
+    .col-skokov-contact .address-skokov dt, .col-skokov-contact .address-skokov dd {
+      text-align: center;
+      display: inline-block;
+      margin-bottom: 5px; }
+      .col-skokov-contact .address-skokov dt a, .col-skokov-contact .address-skokov dd a {
+        color: #ffffff; }
+  .col-skokov-contact .form-skokov .input-footer-skokov {
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #cfc011;
+    border-radius: 0;
+    box-shadow: none; }
+  .col-skokov-contact .form-skokov .input-group-btn-skokov {
+    background: transparent; }
+    .col-skokov-contact .form-skokov .input-group-btn-skokov .btn-footer-skokov {
+      margin: 5px 0 0;
+      border-radius: 0;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+      background: #000000; }
+      .col-skokov-contact .form-skokov .input-group-btn-skokov .btn-footer-skokov i {
+        width: 2.8rem;
+        padding: 0.5rem 0; }
+
+@media (min-width: 568px) and (max-width: 767px) {
+  html {
+    font-size: 13px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 14px; }
+
+  #footer {
+    padding: 10px 10px; }
+    #footer .col-skokov-tweets {
+      padding-left: 40px; }
+      #footer .col-skokov-tweets .footer-social-connecting {
+        margin-bottom: 10px; }
+
+  .navbar-skokov-bottom .footer-autor {
+    text-align: left;
+    float: left; } }
+@media (min-width: 992px) {
+  #footer .col-skokov-tweets {
+    padding-left: 45px; } }
+body {
+  background: #f6f6f6;
+  color: #424147;
+  font-family: "Century Gothic", sans-serif;
+  line-height: 1.313rem;
+  font-weight: 400; }
+
+.section-portfolio-skokov {
+  background: url("../images/slider-bg-2.png") no-repeat;
+  width: 100%; }
+  .section-portfolio-skokov .title-portfolio {
+    display: inline-block;
+    background-color: #424146;
+    color: #ffea00;
+    font-size: 2.188rem;
+    text-transform: uppercase; }
+
+.section-content {
+  text-align: center; }
+  .section-content .title-section-content {
+    padding-top: 15px;
+    font-size: 2.188rem;
+    text-transform: uppercase; }
+  .section-content .text-section-content {
+    font-size: 1.5rem;
+    padding-top: 15px; }
+  .section-content .menu-skokov {
+    font-size: 1.5rem;
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+    padding-top: 20px; }
+    .section-content .menu-skokov li {
+      display: inline;
+      margin-left: 5px; }
+      .section-content .menu-skokov li.active a {
+        background: #ffeb00; }
+      .section-content .menu-skokov li a {
+        text-decoration: none;
+        color: #424147; }
+        .section-content .menu-skokov li a:hover {
+          background: #ffeb00; }
+  .section-content .menu-img {
+    padding: 0;
+    list-style-type: none; }
+    .section-content .menu-img .col-img-portfolio {
+      display: inline-block;
+      padding: 10px 10px; }
+      .section-content .menu-img .col-img-portfolio .overlay-hover {
+        display: none; }
+      .section-content .menu-img .col-img-portfolio .img-portfolio {
+        width: 100%;
+        height: auto; }
+      .section-content .menu-img .col-img-portfolio:hover .overlay-hover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 30px;
+        left: 10px;
+        right: 10px;
+        bottom: 30px;
+        opacity: 0.5;
+        background-color: #ffea00; }
+        .section-content .menu-img .col-img-portfolio:hover .overlay-hover a {
+          margin: 0 auto;
+          color: white;
+          opacity: 0.8;
+          background-color: #424146;
+          width: 150px;
+          padding: 50px;
+          text-decoration: none; }
+          .section-content .menu-img .col-img-portfolio:hover .overlay-hover a i {
+            opacity: 1;
+            font-size: 47px; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 14px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 16px; }
+
+  .section-portfolio-skokov .title-portfolio {
+    padding: 22px 105px 22px 22px;
+    margin: 40px 0;
+    margin-left: 134px; }
+
+  .section-content .title-section-content {
+    padding-top: 60px; }
+  .section-content .menu-skokov {
+    padding-left: 134px;
+    padding-top: 70px; }
+    .section-content .menu-skokov li {
+      margin-left: 45px; }
+  .section-content .menu-img {
+    margin-bottom: 50px; }
+    .section-content .menu-img .col-img-portfolio {
+      padding: 30px 10px; } }
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px; }
+
+  .section-portfolio-skokov .title-portfolio {
+    padding: 22px 105px 22px 22px;
+    margin: 40px 0;
+    margin-left: 134px; }
+
+  .section-content .title-section-content {
+    padding-top: 60px; }
+  .section-content .menu-skokov {
+    padding-left: 134px;
+    padding-top: 70px; }
+    .section-content .menu-skokov li {
+      margin-left: 45px; }
+  .section-content .menu-img {
+    margin-bottom: 50px; }
+    .section-content .menu-img .col-img-portfolio {
+      padding: 30px 10px; } }
+
+/*# sourceMappingURL=style-portfolio.css.map */

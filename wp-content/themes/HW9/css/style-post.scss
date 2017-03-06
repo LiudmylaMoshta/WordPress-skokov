@@ -1,0 +1,614 @@
+html {
+    font-size: 10px;
+}
+
+@import "../lib/fancybox/jquery.fancybox.css";
+@import "modules/header";
+@import "modules/footer";
+body {
+    background: #f6f6f6;
+    ul, li {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.section-project-skokov{
+    background: url("../images/slider-bg-2.png") no-repeat 50% 50%;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 20px;
+    .title-project {
+        display: inline-block;
+        min-width: 290px;
+        background-color: #424146;
+        color: #ffea00;
+        font-size: 2.188rem;
+        text-transform: uppercase;
+    }
+}
+.aside-project {
+    .title-aside {
+        color: #ffea00;
+        font: 400 1.25rem/1.312rem "Century Gothic";
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .aside-categories, .aside-archive, .aside-post, .aside-tags {
+        background-color: #424147;
+        padding: 20px 20px 5px;
+        margin-bottom: 30px;
+    }
+    .aside-search {
+        margin-bottom: 30px;
+        background-color: #424147;
+        padding: 20px 21px;
+
+        .form-control-blog {
+            border-radius: 50px 0 0 50px;
+            background-color: #f6f6f6;
+        }
+        .btn-blog {
+            border-radius: 0 50px 50px 0;
+            border-left: none;
+            background-color: #f6f6f6;
+            box-shadow: none;
+        }
+    }
+    .ul-aside-categories {
+        text-transform: uppercase;
+        padding: 0;
+        .li-aside-categories {
+            font: 400 1rem/1.312rem "Century Gothic";
+            padding-bottom: 10px;
+            a {
+                color: #ffffff;
+            }
+            &:before {
+                content: "\203a";
+                background: #ffeb00;
+                width: 31px;
+                padding-left: 7px;
+                padding-right: 7px;
+                color: #000000;
+            }
+        }
+    }
+    .ul-aside-archive {
+        text-transform: uppercase;
+        padding: 0;
+        .li-aside-archive {
+            padding-bottom: 10px;
+            font: 400 1rem/1.312rem "Century Gothic";
+            a {
+                color: #ffffff;
+            }
+            &:before {
+                content: "\203a";
+                background: #ffeb00;
+                width: 31px;
+                padding-left: 7px;
+                padding-right: 7px;
+                color: #000000;
+            }
+        }
+    }
+    .ul-aside-post {
+        padding: 0;
+        .li-aside-post {
+            padding-bottom: 10px;
+            .link-post {
+                color: #ffffff;
+            }
+            font: 400 1rem/1.25rem "Century Gothic";
+            text-transform: uppercase;
+
+            .img-aside-post {
+                float: left;
+                padding-right: 25px;
+            }
+            .yellow {
+                color: #ffea00;
+                font: 400 .75rem/1.25rem "Century Gothic";
+                display: block;
+                text-align: right;
+                padding-top: 10px;
+            }
+        }
+    }
+    .ul-aside-tags {
+        padding: 0;
+        .li-aside-tags {
+            display: inline;
+            line-height: 30px;
+            background-color: #ffea00;
+            margin: 1.5px;
+            text-align: center;
+
+            a {
+                padding: 6px 9px;
+                text-decoration: none;
+                color: #424147;
+                font: 400 1rem/1.25rem "Century Gothic";
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+.section-content,.section-comments,
+.section-related,.section-leave-comments{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.section-content{
+    .img-blog{
+        width: 100%;
+    }
+    .text-post{
+        color: #424147;
+        font:400 0.938rem/1.875rem "Century Gothic";
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .text-content{
+        background-color: #ffea00;
+        .title-post{
+            color: black;
+            font:400 1.875rem/1.875rem "Century Gothic";
+            text-transform: uppercase;
+            margin-top: 0;
+            padding-top: 30px;
+            padding-left: 30px;
+        }
+        .data-comments{
+            text-align:right ;
+            display: block;
+            color: black;
+            font:400 0.75rem/1.25rem "Century Gothic";
+            padding-bottom: 8px;
+            .like{
+                color: #5e5e5e;
+            }
+        }
+    }
+}
+.post-footer {
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 50px;
+}
+
+.title-social{
+    display: inline-block;
+    color: #ffea00;
+    font: 400 1.125rem/1.313rem "Century Gothic";
+    text-transform: uppercase;
+    background-color: #424147;
+    padding: 7px ;
+    margin-bottom: 25px;
+    text-align: center;
+
+}
+.social-like{
+    //text-align: center;
+    //padding-bottom: 57px;
+    dt,dd{
+        display: inline-block;
+    }
+    dt{
+        background: #000000;
+        width: 30px;
+        text-align: center;
+        padding: 5px 0;
+        a{
+            color: #ffffff;
+        }
+    }
+    dd{
+        width: 30px;
+        background-color: #ffea00;
+        color: #000000;
+        text-align: center;
+        margin-left: -4px;
+        padding: 5px 0;
+    }
+
+}
+.post-header{
+    &:hover{
+        .text-content{
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                margin-top: -30px;
+                right: 20%;
+                border: 16px solid transparent;
+                border-bottom-color: #ffeb00;
+                margin-left: -8px;
+            }
+        }
+    }
+}
+.hover-trial {
+    &:hover {
+        .title-related {
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                margin-top: -43px;
+                right: 20%;
+                border: 16px solid transparent;
+                border-bottom-color: #ffeb00;
+                margin-left: -8px;
+            }
+        }
+    }
+}
+.section-related{
+    border-bottom: 1px solid #cacaca;
+    padding-bottom: 40px;
+    .list-related{
+        padding-left: 0;
+            .title-related{
+                color: black;
+                font: 400 0.813rem/1.063rem "Century Gothic";
+                text-transform: uppercase;
+                background-color: #ffea00;
+                margin-top: 0;
+                padding: 12px;
+            }
+            .img-related{
+                width: 100%;
+            }
+        }
+    }
+
+.comments{
+    .title-comment{
+        color: #000000;
+        font: 400 1rem/1.313 "Century Gothic";
+        width: 190px;
+        a{
+            color:#000000;
+        }
+
+    }
+    .text-comment{
+        color: #424147;
+        font:400 0.937rem/1.875rem "Century Gothic";
+        margin: 20px 15px 40px;
+    }
+}
+.section-leave-comments{
+    .form-inline-blog{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: right;
+        .btn-comments{
+            width: 151px;
+            background-color: black;
+            color: white;
+            font:400 0.938rem/2.373rem "Century Gothic";
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+        .textarea-blog{
+            width: 100%;
+            border: none;
+            border-radius: 0;
+            margin-top: 20px;
+            min-height: 171px;
+        }
+        .form-group-comments{
+            padding: 8px;
+            input{
+                width: 100%;
+                border: none;
+                border-radius: 0;
+                height: 50px;
+            }
+
+        }
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 11px;
+    }
+    .section-comments{
+        ul{
+            padding-left: 0;
+            li{
+                .avatars{
+                    width: 20%;
+                }
+            }
+        }
+    }
+    .aside-project {
+        .aside-categories, .aside-archive, .aside-post, .aside-tags {
+            padding: 10px 10px 10px;
+        }
+        .ul-aside-categories {
+            padding-left: 15px;
+            .li-aside-categories {
+                padding-left: 7px;
+                padding-right: 7px;
+            }
+        }
+        .ul-aside-archive {
+            padding-left: 15px;
+            .li-aside-archive {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+        .ul-aside-post {
+            .li-aside-post {
+                .img-aside-post {
+                    padding-right: 10px;
+                }
+                .yellow {
+                    padding-top: 15px;
+                }
+            }
+        }
+        .ul-aside-tags {
+            padding-left: 15px;
+            .li-aside-tags {
+                margin-left: 1.5px;
+                padding: 6px 9px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    html {
+        font-size: 14px;
+    }
+    .aside-project {
+        .aside-categories, .aside-archive, .aside-post, .aside-tags {
+            padding: 35px 35px 15px;
+        }
+        .ul-aside-categories {
+            padding-left: 20px;
+        }
+        .ul-aside-archive {
+            padding-left: 20px;
+        }
+        .ul-aside-post {
+            .li-aside-post {
+                .yellow {
+                    padding-top: 10px;
+                }
+            }
+        }
+        .ul-aside-tags {
+            padding-left: 40px;
+            .li-aside-tags {
+                margin-left: 1.5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1632px) {
+    html {
+        font-size: 16px;
+    }
+    .aside-project {
+        .aside-categories, .aside-archive, .aside-post, .aside-tags {
+            padding: 35px 35px 15px;
+        }
+        .ul-aside-post {
+            .li-aside-post {
+                .yellow {
+                    padding-top: 10px;
+                }
+            }
+        }
+        .ul-aside-tags {
+            .li-aside-tags {
+                margin-left: 1.5px;
+                padding: 6px 5px;
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1663px) {
+    html {
+        font-size: 16px;
+    }
+    .section-project-skokov {
+        margin-bottom: 78px;
+        .title-project {
+            padding: 22px;
+            margin: 40px 119px;
+        }
+    }
+    .aside-project {
+        .aside-categories, .aside-archive, .aside-post, .aside-tags {
+            padding: 35px 35px 15px !important;
+        }
+        .yellow {
+            padding-top: 10px;
+        }
+        .aside-search {
+            padding: 21px 54px;
+
+            .form-control-blog {
+            }
+            .btn-blog {
+            }
+        }
+    }
+    .section-content,.section-comments,
+    .section-related,.section-leave-comments{
+        margin-left: 130px;
+        margin-right: 130px;
+    }
+    .section-content{
+        .img-blog{
+            width: 100%;
+        }
+        .text-post{
+            color: #424147;
+            font:400 0.938rem/1.875rem "Century Gothic";
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .text-content{
+            background-color: #ffea00;
+            .title-post{
+                color: black;
+                font:400 1.875rem/1.875rem "Century Gothic";
+                text-transform: uppercase;
+                margin-top: 0;
+                padding-top: 30px;
+                padding-left: 30px;
+            }
+            .data-comments{
+                text-align:right ;
+                display: block;
+                color: black;
+                font:400 0.75rem/1.25rem "Century Gothic";
+                padding-bottom: 8px;
+                .like{
+                    color: #5e5e5e;
+                }
+            }
+        }
+    }
+    .title-social{
+        display: inline-block;
+        color: #ffea00;
+        font: 400 1.125rem/1.313rem "Century Gothic";
+        text-transform: uppercase;
+        background-color: #424147;
+        padding: 7px ;
+        margin-bottom: 25px;
+
+    }
+    .social-like{
+        text-align: right;
+        margin-top: -45px;
+        border-bottom: 1px solid #cacaca;
+        padding-bottom: 57px;
+        dt,dd{
+            display: inline-block;
+        }
+        dt{
+            background: #000000;
+            width: 30px;
+            text-align: center;
+            padding: 5px 0;
+            a{
+                color: #ffffff;
+            }
+        }
+        dd{
+            width: 50px;
+            background-color: #ffea00;
+            color: #000000;
+            text-align: center;
+            margin-left: -4px;
+            margin-right: 26px;
+            padding: 5px 0;
+        }
+
+    }
+    .section-related{
+        border-bottom: 1px solid #cacaca;
+        padding-bottom: 40px;
+        .list-related{
+            padding-left: 0;
+            li{
+
+                .title-related{
+                    color:#000000;
+                    font: 400 0.813rem/1.063rem "Century Gothic";
+                    text-transform: uppercase;
+                    background-color: #ffea00;
+                    margin-top: 0;
+                    padding: 12px;
+                    a{
+                        color:#000000;
+                    }
+                }
+            }
+        }
+    }
+    .comments{
+        .title-comment{
+            color: black;
+            font: 400 1rem/1.313 "Century Gothic";
+            width: 190px;
+
+        }
+        .text-comment{
+            color: #424147;
+            font:400 0.937rem/1.875rem "Century Gothic";
+            margin: 20px 15px 40px;
+        }
+    }
+    .section-comments{
+        border-bottom: 1px solid #cacaca;
+        padding-bottom: 50px;
+        ul{
+            padding-left: 0;
+            li{
+                .avatars{
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+    .section-leave-comments{
+        .form-inline-blog{
+            padding-left: 0;
+            padding-right: 0;
+            text-align: right;
+            .post-form{
+                padding-left: 0;
+            }
+            .btn-comments{
+                width: 151px;
+                background-color: black;
+                color: white;
+                font:400 0.938rem/2.373rem "Century Gothic";
+                margin-top: 20px;
+                margin-bottom: 102px;
+
+            }
+            .textarea-blog{
+                width: 100%;
+                border: none;
+                border-radius: 0;
+                margin-top: 20px;
+                min-height: 171px;
+            }
+            .form-group-comments{
+                padding: 8px;
+                input{
+                    width: 100%;
+                    border: none;
+                    border-radius: 0;
+                    height: 50px;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,30 @@
+#header {
+  background: #f6f6f6; }
+
+.navbar-skokov {
+  margin-bottom: 0; }
+  .navbar-skokov .nav-header-skokov .btn-collapsed-skokov {
+    border: 1.5px solid #28a4c9;
+    margin: 18px; }
+    .navbar-skokov .nav-header-skokov .btn-collapsed-skokov span {
+      border: 1px solid #28a4c9; }
+  .navbar-skokov .brand-skokov {
+    padding: 0;
+    margin: 5px; }
+    .navbar-skokov .brand-skokov .img-logo {
+      height: 100%; }
+  .navbar-skokov .nav-skokov {
+    margin-bottom: 0; }
+    .navbar-skokov .nav-skokov .li-nav-skokov {
+      color: black;
+      font: 300 1.6em/3.2em Code, serif;
+      text-transform: uppercase;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .navbar-skokov .nav-skokov .li-nav-skokov a {
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        .navbar-skokov .nav-skokov .li-nav-skokov a:hover {
+          background-color: #ffea00; }
+
+/*# sourceMappingURL=header.css.map */
