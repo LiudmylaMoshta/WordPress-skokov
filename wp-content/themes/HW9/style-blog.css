@@ -1,6 +1,6 @@
 @import url(./lib/fancybox/jquery.fancybox.css);
 html {
-  font-size: 10px; }
+  font-size: 11px; }
 
 #header {
   background: #f6f6f6; }
@@ -31,13 +31,11 @@ html {
         .navbar-skokov .nav-skokov .li-nav-skokov a:hover {
           background-color: #ffea00; }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  html {
-    font-size: 15px; } }
+
 @media (min-width: 768px) and (max-width: 991px) {
   html {
-    font-size: 14px; }
-
+    font-size: 14px;
+  }
   .navbar-skokov .nav-skokov .li-nav-skokov {
     margin-top: 40px; }
   .navbar-skokov .brand-skokov {
@@ -103,15 +101,20 @@ html {
       font: 300 1rem/2rem Code; }
       #footer .navbar-skokov-bottom .navbar-right-fotter li {
         display: inline-block; }
-
+.about-footer{
+  margin-bottom: 45px;
+  text-align: left;
+}
 .col-skokov-about {
   padding: 0; }
   .col-skokov-about .btn-learn-more {
     color: #ffffff;
+    margin-top: 20px;
     font-size: 0.938rem;
     padding: 0.13rem 1.125rem;
     background-color: black;
-    border-bottom: 1px solid #ffeb00; }
+    border-bottom: 1px solid #ffeb00;
+  }
   .col-skokov-about .row-footer-img-container {
     list-style-type: none; }
     .col-skokov-about .row-footer-img-container li {
@@ -343,14 +346,13 @@ blockquote {
   margin-bottom: 15px; }
 
 .content {
-  padding: 0 25px 25px;
   margin-bottom: 30px;
-  background-color: #ffea00; }
+   }
   .content:hover .article-content:before {
     content: '';
     display: block;
     position: absolute;
-    margin-top: -50px;
+    margin-top: -57px;
     right: 20%;
     border: 16px solid transparent;
     border-bottom-color: #ffea00;
@@ -359,20 +361,29 @@ blockquote {
     margin-left: -25px;
     margin-right: -25px; }
   .content img {
-    padding: 0; }
-
-
-
+    padding: 0;
+    margin: 0;}
+.content div {
+  margin-right:0;
+  margin-left: 0}
 .article-content h2 a{
     margin-top: 0;
-    padding-top: 10px;
     color: black;
     font: 400 1.438rem/1.875rem "Century Gothic";
     text-transform: uppercase;
     text-decoration: none}
 .article-content p {
     color: #5e5e5e;
-    font: 400 0.875rem/1.25rem "Century Gothic"; }
+    font: 400 0.875rem/1.25rem "Century Gothic";
+    margin-top: 10px;
+  }
+.article-content{
+  padding: 25px;
+  background-color: #ffea00;
+}
+.article-content > h2{
+  margin-top: 0;
+}
 
 
 
@@ -403,7 +414,7 @@ blockquote {
 
 @media (min-width: 768px) and (max-width: 991px) {
   html {
-    font-size: 10px; }
+    font-size: 14px; }
 
   .page-navigation {
     margin-bottom: 77px;

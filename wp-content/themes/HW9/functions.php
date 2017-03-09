@@ -3,6 +3,7 @@
 function skokov() {
 	wp_enqueue_style('style', get_template_directory_uri().'/style.css');
 	wp_enqueue_style('style-blog', get_template_directory_uri().'/style-blog.css');
+    wp_enqueue_style('style-post', get_template_directory_uri().'/style-post.css');
 }
 
 
@@ -52,7 +53,6 @@ function true_register_wp_sidebars() {
 			'description' => 'Перетащите сюда виджеты, чтобы добавить их в сайдбар.', // описание
 			'before_widget' => '<div id="%1$s" class="ul-aside-post">', // по умолчанию виджеты выводятся <li>-списком
 			'after_widget' => '</div>',
-//			'li_class'      => 'li-aside-archive',
 			'before_title' => '<h3 class="title-aside">', // по умолчанию заголовки виджетов в <h2>
 			'after_title' => '</h3>'
 		)
@@ -65,7 +65,6 @@ function true_register_wp_sidebars() {
 			'description' => 'Перетащите сюда виджеты, чтобы добавить их в сайдбар.', // описание
 			'before_widget' => '<div id="%1$s" class="ul-aside-tags">', // по умолчанию виджеты выводятся <li>-списком
 			'after_widget' => '</div>',
-//			'li_class'      => 'li-aside-archive',
 			'before_title' => '<h3 class="title-aside">', // по умолчанию заголовки виджетов в <h2>
 			'after_title' => '</h3>'
 		)
@@ -81,24 +80,13 @@ function true_register_wp_sidebars() {
 		'after_title' => '</h3>'
 	));
 
-	/* В подвале - второй сайдбар */
-	register_sidebar(
-		array(
-			'id' => 'true_foot',
-			'name' => 'Footer',
-			'description' => 'Перетащите сюда виджеты, чтобы добавить их в футер.',
-			'before_widget' => '<div id="%1$s" class="footer-social-connecting %2$s">',
-			'after_widget' => '</div>',
-			'before_title' => '<h3 class="title-footer">',
-			'after_title' => '</h3>'
-		)
-	);
+
 
 	/* В подвале - плагин-виджит твитера */
 	register_sidebar(
 		array(
-			'id' => 'true_twitter',
-			'name' => 'Footer-twitter',
+			'id' => 'footer2_twitter',
+			'name' => 'footer2_twitter',
 			'description' => 'Перетащите сюда виджеты, чтобы добавить их в футер.',
 			'before_widget' => '<div id="%1$s" class="list-tweets %2$s">',
 			'after_widget' => '</div>',
@@ -106,17 +94,30 @@ function true_register_wp_sidebars() {
 			'after_title' => '</h3>'
 		)
 	);
+
+    //mailchimp
+    register_sidebar( array(
+        'name' => __( 'footer3_mailchimp', '' ),
+        'id' => 'footer3_mailchimp',
+        'description' => __( 'footer3_mailchimp', '' ),
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h3 class="title-footer">',
+        'after_title' => '</h3>',
+    ) );
+
+    //about_us
+    register_sidebar( array(
+        'name' => __( 'footer1_about_us', '' ),
+        'id' => 'footer1_about_us',
+        'description' => __( 'footer1_about_us', '' ),
+        'before_widget' => '<div class="about-footer">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="title-footer">',
+        'after_title' => '</h3>',
+    ) );
 }
-//адресса
-register_sidebar( array(
-	'name' => __( 'Address:', '' ),
-	'id' => 'top-area',
-	'description' => __( 'Address:', '' ),
-	'before_widget' => '',
-	'after_widget' => '',
-	'before_title' => '<h3>',
-	'after_title' => '</h3>',
-) );
+
 
 add_action( 'widgets_init', 'true_register_wp_sidebars' );
 

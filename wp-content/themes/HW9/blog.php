@@ -17,14 +17,12 @@
             <div class="row">
                 <blockquote class="col-md-6">
                     <?php if ( is_active_sidebar( 'postin-widget-area' ) ) : ?>
-
                         <div id="postin-widget-area" class="sidebar">
                             <?php dynamic_sidebar( 'postin-widget-area' ); ?>
                         </div>
                     <?php endif; ?>
                     <span class="text-right"></span>
                 </blockquote>
-
                 <?php
                 $temp     = $wp_query;
                 $wp_query = null;
@@ -33,10 +31,7 @@
                 while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
 
                     <article class="content  col-md-6">
-                        <div class="row">
                             <?php the_post_thumbnail(); ?>
-                        </div>
-
                         <div class="article-content">
                             <h2><a href="<?php the_permalink(); ?>" title="Read more">
                                     <?php the_title(); ?>
@@ -51,6 +46,8 @@
                             </div>
                         </div>
                     </article>
+
+
                 <?php endwhile; ?>
                 <nav aria-label="Page navigation" class="row text-center page-navigation">
                     <ul class="col-xs-12 col-sm-8 pagination">
@@ -59,6 +56,7 @@
                         echo paginate_links( array(
                                 'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
                                 'format'    => '?paged=%#%',
+                                'and_size'    => 5,
                                 'current'   => max( 1, get_query_var( 'paged' ) ),
                                 'total'     => $wp_query->max_num_pages,
                                 'prev_text' => __( 'PREV' ),
@@ -76,6 +74,7 @@
 
                 <?php wp_reset_postdata(); ?>
             </div>
+
         </div>
         <?php get_sidebar(); ?>
     </div>
