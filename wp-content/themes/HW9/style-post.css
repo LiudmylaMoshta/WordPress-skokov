@@ -1,4 +1,4 @@
-@import url(/lib/fancybox/jquery.fancybox.css);
+@import url(lib/fancybox/jquery.fancybox.css);
 html {
   font-size: 10px; }
 
@@ -193,7 +193,7 @@ html {
     float: left; } }
 @media (min-width: 992px) {
   #footer .col-skokov-tweets {
-    padding-left: 45px; } }
+   /* padding-left: 45px; */} }
 body {
   background: #f6f6f6; }
   body ul, body li {
@@ -373,6 +373,9 @@ body {
   border: 16px solid transparent;
   border-bottom-color: #ffeb00;
   margin-left: -8px; }
+.text-content{
+  color:red;
+}
 
 .hover-trial:hover .title-related:before {
   content: '';
@@ -390,7 +393,7 @@ body {
   .section-related .list-related {
     padding-left: 0;
     overflow: hidden;}
-.section-related .list-related hover-trial{
+.section-related .list-related .hover-trial{
   width: 33% ;
   float: left;}
     .section-related .list-related .title-related {

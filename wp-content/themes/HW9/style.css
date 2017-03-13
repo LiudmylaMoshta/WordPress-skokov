@@ -113,7 +113,8 @@ html {
 .social-icons-lists li.social-icons-list-item{
     margin: 0;
 }
-
+.social-icons-lists li.social-icons-list-item span{
+  padding: 8px;}
 #footer .con-footer-skokov {
     background: #000000; }
   #footer .icon-footer-skokov {
@@ -123,10 +124,6 @@ html {
     background: #000000; }
   #footer .yellow {
     color: #ffeb00; }
-.list-tweets ul li:before {
-  content: url("images/twitter.png");
-  float: left;
-}
 .list-tweets ul li>p{
     margin-left:30px;
 }
@@ -147,7 +144,8 @@ html {
         display: inline-block; }
 
 .col-skokov-about {
-  padding: 0; }
+  padding: 0;
+  }
   .col-skokov-about .btn-learn-more {
     color: #ffffff;
     font-size: 0.938rem;
@@ -160,7 +158,9 @@ html {
       padding: 5px 1px; }
       .col-skokov-about .row-footer-img-container li .img-skokov-about {
         display: inline-block; }
-
+.about-footer img{
+  margin-bottom: 5px;
+}
 .col-skokov-tweets {
   padding: 0; }
   .col-skokov-tweets a {
@@ -226,7 +226,7 @@ html {
   #footer {
     padding: 10px 10px; }
     #footer .col-skokov-tweets {
-      padding-left: 40px; }
+     /* padding-left: 40px;*/ }
       #footer .col-skokov-tweets .footer-social-connecting {
         margin-bottom: 10px; }
 
@@ -235,7 +235,7 @@ html {
     float: left; } }
 @media (min-width: 992px) {
   #footer .col-skokov-tweets {
-    padding-left: 45px; } }
+   /* padding-left: 45px;*/ } }
 .section-welcome {
   background: url("images/slider-bg.png");
   background-size: cover; }

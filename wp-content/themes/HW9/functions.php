@@ -4,6 +4,7 @@ function skokov() {
 	wp_enqueue_style('style', get_template_directory_uri().'/style.css');
 	wp_enqueue_style('style-blog', get_template_directory_uri().'/style-blog.css');
     wp_enqueue_style('style-post', get_template_directory_uri().'/style-post.css');
+    wp_enqueue_style('style-about', get_template_directory_uri().'/style-about.css');
 }
 
 
@@ -116,10 +117,54 @@ function true_register_wp_sidebars() {
         'before_title' => '<h3 class="title-footer">',
         'after_title' => '</h3>',
     ) );
+
 }
 
 
 add_action( 'widgets_init', 'true_register_wp_sidebars' );
+
+
+
+
+
+// Custom Post Type
+function my_custom_post_product() {
+    $labels = array(
+        'name'               => _x( 'personality', 'our team' ),
+        'singular_name'      => _x( 'personality', 'post type singular name' ),
+        'add_new'            => _x( 'added new', 'personality' ),
+        'add_new_item'       => __( 'added new' ),
+        'edit_item'          => __( 'edit personality' ),
+        'new_item'           => __( 'new' ),
+        'all_items'          => __( 'all personality' ),
+        'view_item'          => __( 'view_item' ),
+        'search_items'       => __( 'search' ),
+        'not_found'          => __( 'Кnot_found' ),
+        'parent_item_colon'  => '',
+        'menu_name'          => 'our team'
+    );
+    $args = array(
+        'labels'        => $labels,
+        'description'   => 'Holds our products and product specific data',
+        'public'        => true,
+        'menu_position' => 5,
+        'supports'      => array( 'title',
+            'editor',
+            'excerpt',
+            'trackbacks',
+            'custom-fields',
+            'comments',
+            'revisions',
+            'thumbnail',
+            'author',
+            'page-attributes'),
+        'has_archive'   => true,
+    );
+    register_post_type( 'product', $args );
+}
+add_action( 'init', 'my_custom_post_product' );
+
+
 
 
 
